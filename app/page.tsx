@@ -32,7 +32,6 @@ export default function Home() {
   }
 
   const sendCodeHandler = () => {
-    console.log(code);
     if (code === '0000') {
       return setStatus('rejected');
     }
@@ -105,7 +104,7 @@ export default function Home() {
 
   
   return (
-    <main className="flex min-h-screen flex-col items-center p-24">
+    <main className="flex min-h-screen flex-col items-center lg:p-24">
       <section className="max-w-xl w-full flex flex-col items-center mt-10">
         {status === 'idle' && renderForm()}
         {status === 'accepted' && rederAcceptInfo()}
