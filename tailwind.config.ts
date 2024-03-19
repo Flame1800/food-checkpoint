@@ -19,6 +19,8 @@ const config = {
     },
     extend: {
       colors: {
+        success: "#02d53b",
+        fail: "#ff3d3d",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
