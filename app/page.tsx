@@ -40,10 +40,6 @@ export default function Home() {
   }
 
   useEffect(() => {
-    requestFullScreen()
-  }, []);
-
-  useEffect(() => {
     if (status === 'idle') return;
 
     setTimeout(() => {
@@ -140,6 +136,7 @@ export default function Home() {
 
   return (
     <main className={`${colorClass} flex min-h-screen flex-col items-center lg:p-24`}>
+      <div className="absolute left-0 top-0 text-white w-10 h-10" onClick={requestFullScreen}></div>
       <section className="max-w-xl w-full flex flex-col items-center mt-10">
         {renderForm()}
       </section>
